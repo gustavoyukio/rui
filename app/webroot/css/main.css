@@ -1,0 +1,221 @@
+/*------------------------------------------------------------------------
+    $variaveis
+    $mixins
+    $globais
+    $header
+    $main
+    $footer
+------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------
+    $mixins
+------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------
+    $globais
+------------------------------------------------------------------------*/
+body, html {
+  height: 100%;
+  color: #222222; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  ul li {
+    display: inline-block;
+    background-color: red;
+    margin: 0;
+    padding: 0; }
+    ul li a {
+      background-color: white;
+      height: 50px;
+      display: block; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1100px; }
+
+/*------------------------------------------------------------------------
+    $header
+------------------------------------------------------------------------*/
+header {
+  height: 150px;
+  box-shadow: 0 -30px 20px 30px  #252525;
+  position: relative;
+  z-index: 10; }
+  header nav {
+    background-color: #f8f8f8;
+    height: 50px; }
+    header nav .main-nav {
+      width: 60%;
+      float: left;
+      border: 0; }
+      header nav .main-nav li {
+        line-height: 50px;
+        margin-left: -4px; }
+        header nav .main-nav li a {
+          transition: all 0.2s ease-in 0s;
+          -o-transition: all 0.2s ease-in 0s;
+          -ms-transition: all 0.2s ease-in 0s;
+          -moz-transition: all 0.2s ease-in 0s;
+          -webkit-transition: all 0.2s ease-in 0s;
+          padding: 0 2em;
+          text-decoration: none; }
+          header nav .main-nav li a:hover {
+            transition: all 0.2s ease-in 0s;
+            -o-transition: all 0.2s ease-in 0s;
+            -ms-transition: all 0.2s ease-in 0s;
+            -moz-transition: all 0.2s ease-in 0s;
+            -webkit-transition: all 0.2s ease-in 0s;
+            background-color: #f0f0f0; }
+      header nav .main-nav li:first-child {
+        width: 50px; }
+    header nav .icones {
+      width: 150px;
+      float: right;
+      height: 50px;
+      padding: 0; }
+      header nav .icones li {
+        width: 50px;
+        text-align: center;
+        margin: 0;
+        margin-left: -5px;
+        line-height: 50px; }
+        header nav .icones li a {
+          transition: all 0.5s ease-in 0s;
+          -o-transition: all 0.5s ease-in 0s;
+          -ms-transition: all 0.5s ease-in 0s;
+          -moz-transition: all 0.5s ease-in 0s;
+          -webkit-transition: all 0.5s ease-in 0s;
+          text-decoration: none;
+          padding: 0; }
+          header nav .icones li a:hover {
+            transition: all 0.5s ease-in 0s;
+            -o-transition: all 0.5s ease-in 0s;
+            -ms-transition: all 0.5s ease-in 0s;
+            -moz-transition: all 0.5s ease-in 0s;
+            -webkit-transition: all 0.5s ease-in 0s;
+            background-color: #f0f0f0; }
+      header nav .icones li:first-child {
+        margin-left: 0px; }
+        header nav .icones li:first-child a {
+          background-color: #eee; }
+          header nav .icones li:first-child a:hover {
+            background-color: #fff; }
+      header nav .icones li:nth-child(2) a {
+        background-color: #dadada; }
+        header nav .icones li:nth-child(2) a:hover {
+          background-color: #fff; }
+      header nav .icones li:nth-child(3) a {
+        background-color: #b6b6b6; }
+        header nav .icones li:nth-child(3) a:hover {
+          background-color: #fff; }
+  header h1 {
+    font-size: 0;
+    text-align: center;
+    clear: both;
+    background-color: transparent; }
+    header h1 img {
+      height: 80px;
+      width: 140px;
+      margin-top: 10px; }
+
+/*------------------------------------------------------------------------
+    $main role
+------------------------------------------------------------------------*/
+div[role='main'] {
+  height: 100%;
+  padding-bottom: 150px;
+  background-color: white;
+  position: relative;
+  z-index: 0; }
+  div[role='main'] .calendar {
+    height: 54px;
+    line-height: 25px;
+    background-color: #eee;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px; }
+    div[role='main'] .calendar ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      height: 54px;
+      padding-left: 4px;
+      transition: all 1s 1s 0;
+      -o-transition: all 1s 1s 0;
+      -ms-transition: all 1s 1s 0;
+      -moz-transition: all 1s 1s 0;
+      -webkit-transition: all 1s 1s 0;
+      text-align: center; }
+      div[role='main'] .calendar ul li {
+        height: 46px;
+        padding: 6px 8px 0 7px;
+        margin: 0;
+        display: block;
+        float: left;
+        background-color: #eaeaea;
+        text-align: left;
+        font-size: 12px;
+        line-height: 13px;
+        transition: all 0.8s ease 0;
+        -o-transition: all 0.8s ease 0;
+        -ms-transition: all 0.8s ease 0;
+        -moz-transition: all 0.8s ease 0;
+        -webkit-transition: all 0.8s ease 0; }
+        div[role='main'] .calendar ul li:hover {
+          background-color: #aaa;
+          transition: all 0.8s ease 0;
+          -o-transition: all 0.8s ease 0;
+          -ms-transition: all 0.8s ease 0;
+          -moz-transition: all 0.8s ease 0;
+          -webkit-transition: all 0.8s ease 0; }
+        div[role='main'] .calendar ul li .time-win {
+          color: gray;
+          display: block; }
+          div[role='main'] .calendar ul li .time-win .score {
+            float: right; }
+        div[role='main'] .calendar ul li .time-loss {
+          color: #555555;
+          display: block; }
+          div[role='main'] .calendar ul li .time-loss .score {
+            float: right; }
+        div[role='main'] .calendar ul li .evento {
+          color: #eeeeee;
+          background-color: #acacac;
+          display: block;
+          height: 20px;
+          line-height: 20px;
+          margin: 0 -6px;
+          padding: 0 6px; }
+  div[role='main'] aside {
+    width: 20%;
+    float: right; }
+    div[role='main'] aside h2 {
+      font-size: 16px;
+      padding: .5em 1em;
+      margin: 0; }
+    div[role='main'] aside ul {
+      font-size: 12px; }
+      div[role='main'] aside ul li {
+        display: block;
+        padding: .5em 1em;
+        margin: 0; }
+        div[role='main'] aside ul li:hover {
+          background-color: white;
+          color: #222; }
+        div[role='main'] aside ul li ul {
+          display: none; }
+  div[role='main'] .content {
+    float: left;
+    width: 75%;
+    height: 100%; }
+    div[role='main'] .content .banners {
+      height: 300px; }
+
+/*------------------------------------------------------------------------
+    $footer
+------------------------------------------------------------------------*/
+footer {
+  height: 150px;
+  margin-top: -150px;
+  background-color: white; }
